@@ -8,10 +8,10 @@ export function renderImages(images, galleryElement) {
       <div class="photo-card">
         <img src="${webformatURL}" alt="${tags}" loading="lazy" />
         <div class="info">
-          <p><b>Likes:</b> ${likes}</p>
-          <p><b>Views:</b> ${views}</p>
-          <p><b>Comments:</b> ${comments}</p>
-          <p><b>Downloads:</b> ${downloads}</p>
+          <li><h3>Likes</h3> <p>${likes}</p></li>
+          <li><h3>Views</h3> <p>${views}</p></li>
+          <li><h3>Comments</h3> <p>${comments}</p></li>
+          <li><h3>Downloads</h3> <p>${downloads}</p></li>
         </div>
       </div>
     </a>

@@ -1,5 +1,11 @@
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
 ul,
-ol {
+ol,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -35,8 +41,10 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0 auto;
   width: 371px;
   height: 40px;
+  margin-bottom: 32px;
 }
 
 .input {
@@ -86,21 +94,40 @@ button {
 
 .gallery a {
   display: block;
-  width: calc((100%-48px)/3);
+  width: calc((100% - 2 * 24px) / 3);
+  min-height: 200px;
   border: 1px solid #000;
   box-sizing: border-box;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.info {
-  text-align: center;
+.photo-card {
+  display: block;
+  max-width: 360px;
 }
 
-.info p {
+.info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+li {
+  font-family: 'Montserrat SemiBold', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+p {
   font-family: 'Montserrat Regular', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 2;
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
