@@ -116,10 +116,10 @@ button {
 
 .info {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  max-width: 360px;
+  min-width: 481px;
   height: auto;
   gap: 28px;
 }
